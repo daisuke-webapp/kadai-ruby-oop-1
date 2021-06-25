@@ -1,6 +1,6 @@
 class Team
     # インスタンスが持つ変数(値)
-    attr_accessor :name, :win, :lose, :draw, :calc_win_rate
+    attr_accessor :name, :win, :lose, :draw
     
     # インスタンスを初期化するためのメソッド
     def initialize(name,win,lose,draw)
