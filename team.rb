@@ -8,7 +8,6 @@ class Team
         @win = win
         @lose = lose
         @draw = draw
-        @calc_win_rate = calc_win_rate
     end
 
     #インスタンスが持つメソッド(処理)
@@ -16,7 +15,7 @@ class Team
          return @win.to_f / (@win + @lose)
     end
     def show_team_result
-        puts "#{@name}の2020年の成績は#{@winto_f}勝#{@loseto_f}敗#{@draw}分、勝率は#{@calc_win_rate
+        puts "#{@name}の2020年の成績は#{@win}勝#{@lose}敗#{@draw}分、勝率は#{calc_win_rate
         }です。"
     end
 end
